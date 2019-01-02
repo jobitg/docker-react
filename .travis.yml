@@ -7,5 +7,3 @@ services:
    
  script:
     - docker run jobitg/docker-react npm run test -- --coverage
-    
-    
