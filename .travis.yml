@@ -3,9 +3,9 @@ services:
     - docker
  
  before_install:
-    - docker build -t jobitg/docker-react -f Dockerfile.dev .
+    - docker build -t jobitg/docker-react -f dockerfile.dev .
    
- Scripts:
+ script:
     - docker run jobitg/docker-react npm run test -- --coverage
     
     
